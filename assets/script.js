@@ -27,7 +27,7 @@ const badCardsContent = [
   {
     id: 0,
     title: "🤷‍♂️ Not all narv-men (?)🤦‍♂️",
-    body: "Scopri che nonostante l'anno sia iniziato da poco si contano già troppi narvicidi. Decidi di dedicarti un attimo all'estinzione della sotto-specie Narwhal Alpha Cishet.",
+    body: "Scopri che, nonostante l'anno sia iniziato da poco, si contano già troppi narvicidi. Decidi di dedicarti un attimo all'estinzione della sotto-specie Narwhal Alpha Cishet.",
   },
   {
     id: 1,
@@ -47,17 +47,17 @@ const badCardsContent = [
   {
     id: 4,
     title: "☠️ Corsa Senza Meta ☠️",
-    body: "Finisci nel vortice acquatico della disoccupazione, perdentdoti alla ricerca di lavoro in un acque ostili.",
+    body: "Finisci nel vortice acquatico della disoccupazione, perdendoti alla ricerca di lavoro in acque ostili.",
   },
   {
     id: 5,
     title: "🦄 Ippocorni in agguato! 🦄",
-    body: "Un branco di Ippocorni incantati ti sfida a una gara subacquea. Perdi e sei costretto ad essere loro schiavo per ore.",
+    body: "Un branco di Ippocorni incantati ti sfida in una gara subacquea. Perdi e sei costretto ad essere loro schiavo per ore.",
   },
   {
     id: 6,
     title: "🙏Ti influenzi!🙏",
-    body: "Scopri che i centri per narvale maltrattate ricevono fondi solo dalla Ferragni a Sanremo e non dai governi. Decidi di nuotare fino alla sua villa per organizzare assieme un colpo di Stato.",
+    body: "Scopri che i centri per narvale maltrattate ricevono fondi solo dalla Ferragni a Sanremo e non dai governi. Decidi di nuotare fino alla sua villa per organizzare insieme un colpo di Stato.",
   },
   {
     id: 7,
@@ -97,12 +97,12 @@ const badCardsContent = [
   {
     id: 14,
     title: "🦈 Amico squalo 😊",
-    body: "Un tuo amico è in pericolo, rischia essere pescato per delle sciocche abitudini umane. Diventi un eroe ma rallenti il tuo viaggio.",
+    body: "Un tuo amico è in pericolo, rischia di essere pescato per delle sciocche abitudini umane. Diventi un eroe ma rallenti il tuo viaggio.",
   },
   {
     id: 15,
     title: "☠️ Oh no! ☠️",
-    body: "Accidenti! Baby Narval è stato circondato da un gruppo di 'Bravi Ragazzi' con tante 'buone intenzioni'!",
+    body: "Accidenti! Sei stato circondato da un gruppo di 'Bravi Ragazzi' con tante 'buone intenzioni'!",
   },
   {
     id: 16,
@@ -112,12 +112,12 @@ const badCardsContent = [
   {
     id: 17,
     title: "✨ Portale magico! ✨",
-    body: "Apri una strana porta e finisci trasportato in RuPaul's Drag Race. Se non sfili come una vera drag queen non potrai tornare sui tuoi passi!",
+    body: "Apri una strana porta e finisci trasportato in RuPaul's Drag Race. Se non sfili come una vera drag queen, non potrai tornare sui tuoi passi!",
   },
   {
     id: 18,
     title: "🌪️ Oh tempesta! 🌪️",
-    body: "Un vortice marino di travolge e rimani a girare e girare e girare e girare e.....",
+    body: "Un vortice marino ti travolge e rimani a girare e girare e girare e girare e.....",
   },
   {
     id: 19,
@@ -132,7 +132,7 @@ const badCardsContent = [
   {
     id: 21,
     title: "🌈 SURPRISE 🌈",
-    body: "Il caldo ti da alla testa, pensi di essere un unicorno e ti lanci fuori dall'acqua.",
+    body: "Il caldo ti dà alla testa, pensi di essere un unicorno e ti lanci fuori dall'acqua.",
   },
   {
     id: 22,
@@ -142,7 +142,7 @@ const badCardsContent = [
   {
     id: 23,
     title: "🌏 Terra Sospesa ❄️",
-    body: "Mentre esplori le acque artiche, l'accelerato scioglimento dei ghiacci minaccia il tuo viaggio.",
+    body: "Mentre esplori le acque artiche, l'accelerato scioglimento dei ghiacciai minaccia il tuo viaggio.",
   },
   {
     id: 24,
@@ -161,18 +161,18 @@ const badCardsContent = [
   },
   {
     id: 27,
-    title: "🛥️Arca di Noé 🐱",
+    title: "🛥️ Arca di Noé 🐱",
     body: "Ti senti affondare nel dilagante problema dell'estinzione delle specie. Provi a costruire un'arca per i tuoi amici terrestri.",
   },
   {
     id: 28,
-    title: "🫰Traffico d'Ingiustizia💸",
+    title: "🫰 Traffico d'Ingiustizia 💸",
     body: "Ti perdi in un mare di corruzione imbattendoti nel traffico di esseri umani. Abbandoni la tua strada e inizi ad affondare le barche dei trafficanti.",
   },
   {
     id: 29,
     title: "🌳 La Foresta Piange 🌴",
-    body: "Mentre nuoti nei mari tropicali, ti imbatti nella deforestazione selvaggia e vieni colpito dell'inquinamento e dai detriti.",
+    body: "Mentre nuoti nei mari tropicali, ti imbatti nella deforestazione selvaggia e vieni colpito dall'inquinamento e dai detriti.",
   },
 ];
 const extractNumbers = [];
@@ -226,7 +226,7 @@ function startGame() {
         score += 15;
       } else {
         cell.classList.add("cell-clicked");
-        score += 3;
+        score += 5;
       }
       // ---- HANDLE SCORE AND ENDGAME ---- //
       // Verifico se tutte le celle delle bad cards sono state cliccate

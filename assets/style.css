@@ -124,6 +124,7 @@ h1 {
 }
 .win {
   background-color: blueviolet;
+  text-align: center;
 }
 .win::after {
   position: absolute;
@@ -140,7 +141,9 @@ h1 {
   font-family: "Press Start 2P", cursive;
   margin-bottom: 16px;
   color: #fff;
-  z-index: 3;
+  z-index: 1;
+  padding: 20px;
+  background: radial-gradient(#872de6 -30%, #872de600);
 }
 
 button {
@@ -178,6 +181,7 @@ button:hover {
   background-color: rgba(19, 1, 50, 0.863);
   display: grid;
   place-content: center;
+  z-index: 5;
 }
 .close {
   cursor: pointer;
@@ -200,19 +204,21 @@ button:hover {
 .card,
 .bonus-card {
   position: relative;
-  width: 80vw;
+  width: 60vw;
   background-color: #fff;
   place-content: center;
-  padding: 30px;
+  padding: 50px 30px;
   border-radius: 13px;
   display: grid;
-  grid-template-columns: 0.3fr 0.5fr 0.2fr;
+  grid-template-columns: 55% 35%;
+  /* grid-template-columns: 0.3fr 0.5fr 0.2fr; */
   box-shadow: 0px 0px 23px 5px rgba(0, 0, 0, 0.5);
+  gap: 50px;
 }
 .card-title {
   text-align: center;
   text-transform: uppercase;
-  font-size: 22px;
+  font-size: 26px;
 }
 .col3,
 .col2 {
@@ -224,7 +230,7 @@ button:hover {
 }
 .col3 img,
 .col1 img {
-  width: 100%;
+  width: 80%;
   align-self: center;
 }
 hr {
@@ -233,6 +239,7 @@ hr {
 }
 .bodytext {
   text-align: center;
+  font-size: 20px;
 }
 .fear {
   text-align: center;

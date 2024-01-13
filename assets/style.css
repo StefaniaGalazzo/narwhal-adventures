@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  /* padding: 16px; */
+  line-height: 1;
+  color: rgb(0, 23, 50);
+  background-color: rgb(248 226 243);
+  font-family: "Darker Grotesque", sans-serif;
+}
+header {
+  margin-top: 40px;
+}
+header img {
+  animation: upDown 3s ease-in-out infinite;
+}
+
+.game-container {
+  width: 484px;
+  margin: 0 auto;
+}
+/* GAME PANEL */
+/* top */
+h1 {
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  margin: 20px auto;
+  width: fit-content;
+}
+
+.score {
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+}
+
+/* grid */
+.game-board {
+  position: relative;
+  border: 2px solid rgb(0, 23, 50);
+  overflow: hidden;
+}
+
+.grid {
+  height: 480px;
+  width: 480px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.cell {
+  width: 48px;
+  height: 48px;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🌈</text></svg>")
+      16 0,
+    auto; /*!emojicursor.app*/
+}
+
+.cell-dark {
+  background-color: rgb(220 203 224);
+}
+
+.cell:hover {
+  background-color: rgb(192, 154, 200);
+}
+.cell-clicked {
+  background: rgb(31, 0, 156);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../assets/images/happy-narval.svg");
+}
+
+.dead-narv {
+  background-image: url("../assets/images/dead-narval.svg");
+  background-color: rgb(132, 1, 114);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.happy-narv {
+  background-image: url("../assets/images/happy-narval.svg");
+  background-color: rgb(132, 1, 114);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.cell-clicked,
+.dead-narv {
+  cursor: not-allowed;
+}
+
+/* END GAME */
+.end-game-screen {
+  background-color: rgb(121, 0, 111);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+}
+.end-game-screen::after {
+  position: absolute;
+  content: url("../assets/images/dead-narval.svg");
+  top: -50%;
+  left: -55%;
+  width: 800px;
+}
+.win {
+  background-color: blueviolet;
+}
+.win::after {
+  position: absolute;
+  animation: upDown 3s ease-in-out infinite;
+  content: url("../assets/images/happy-narval.svg");
+  top: -50%;
+  left: -55%;
+  width: 800px;
+}
+
+.end-game-text {
+  font-size: 28px;
+  line-height: 1.2;
+  font-family: "Press Start 2P", cursive;
+  margin-bottom: 16px;
+  color: #fff;
+  z-index: 3;
+}
+
+button {
+  border: 2px solid rgb(0, 23, 50);
+  font-size: 24px;
+  font-family: "Darker Grotesque", sans-serif;
+  text-transform: uppercase;
+  padding: 4px 20px 8px 20px;
+  cursor: pointer;
+  z-index: 3;
+}
+
+button:hover {
+  background-color: rgb(227, 211, 236);
+}
+
+.hide {
+  display: none;
+  visibility: hidden;
+}
+.show {
+  display: block;
+  visibility: hidden;
+}
+/* POPUPS & CARDS*/
+/* #dead-card-container {
+  display: none;
+} */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(19, 1, 50, 0.863);
+  display: grid;
+  place-content: center;
+}
+.close {
+  cursor: pointer;
+  position: absolute;
+  right: 30px;
+  top: 14px;
+  color: black;
+  border-radius: 100px;
+  width: 25px;
+  max-width: 25px;
+  height: 25px;
+  max-height: 25px;
+  display: grid;
+  place-content: center;
+  box-shadow: 0 0 13px #ccc;
+}
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+.card,
+.bonus-card {
+  position: relative;
+  width: 80vw;
+  background-color: #fff;
+  place-content: center;
+  padding: 30px;
+  border-radius: 13px;
+  display: grid;
+  grid-template-columns: 0.3fr 0.5fr 0.2fr;
+  box-shadow: 0px 0px 23px 5px rgba(0, 0, 0, 0.5);
+}
+.card-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 22px;
+}
+.col3,
+.col2 {
+  display: grid;
+  place-content: center;
+}
+.col2 {
+  padding: 30px;
+}
+.col3 img,
+.col1 img {
+  width: 100%;
+  align-self: center;
+}
+hr {
+  border: 1px solid blue;
+  margin: 10px 0;
+}
+.bodytext {
+  text-align: center;
+}
+.fear {
+  text-align: center;
+  margin-top: 30px;
+  text-transform: uppercase;
+  font-size: 25px;
+  color: blueviolet;
+}
+.dead-narval {
+  animation: upDown 3s ease-in-out infinite;
+}
+
+/* generic class*/
+.flex-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.upDown {
+  animation: upDown 3s ease-in-out infinite;
+}
+/*ANIMATIONS*/
+@keyframes upDown {
+  0% {
+    transform: translateY(-15px);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Narval's Scary adventures</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@700&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+
+  <body>
+    <header class="flex-row">
+      <img
+        src="assets/images/happy-narval.svg"
+        alt="happy-narval"
+        width="80px"
+      />
+      <!-- Game Title -->
+      <h1>Narval's Scary Adventure</h1>
+      <img
+        src="assets/images/flipped-dead-narv.png"
+        alt="happy-narval"
+        width="80px"
+      />
+    </header>
+    <div class="game-container">
+      <label for="levels">Seleziona il livello</label>
+      <select name="level" id="level">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+      <div class="game-panel">
+        <!-- Punteggio -->
+        <div class="score">
+          <span class="score-label">SCORE: </span>
+          <span class="score-counter"> 00000</span>
+        </div>
+      </div>
+
+      <!-- Tabellone di gioco -->
+      <div class="game-board">
+        <div class="grid"></div>
+
+        <!-- Schermata di fine gioco -->
+        <div class="end-game-screen hide">
+          <h2 class="end-game-text">Game<br />Over</h2>
+          <button class="play-again">Gioca ancora</button>
+        </div>
+      </div>
+    </div>
+    <!-- DEAD Modal popup-->
+    <div id="dead-card-container" class="hide">
+      <div class="overlay dead" id="#dead-card">
+        <div class="card">
+          <div class="close">
+            <span class="material-symbols-outlined"> close </span>
+          </div>
+          <div class="col1">
+            <img
+              id="spookyContentImg"
+              src="assets/images/ripzombie.png"
+              alt="oh no! you died of fear!!"
+              class="dead-narval upDown"
+            />
+          </div>
+          <div class="col2">
+            <h3 class="card-title"></h3>
+            <hr />
+            <p class="bodytext"></p>
+            <p class="cite"></p>
+            <h4 class="fear">Oh no! I died of fear!</h4>
+          </div>
+          <div class="col3">
+            <img
+              src="assets/images/flipped-dead-narv.png"
+              alt="dead-narval"
+              class="dead-narval upDown"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BONUS Modal popup-->
+    <div class="overlay bonus hide">
+      <div class="bonus-card">
+        <div class="close">X</div>
+        <div class="col1">
+          <img
+            src="assets/images/happy-narval.svg"
+            alt="happy-narval"
+            class="happy-narval"
+          />
+        </div>
+        <div class="col2">
+          <h3 class="card-title">No bad news for today! Get a 15pt bonus!</h3>
+          <hr />
+          <p class="bodytext"></p>
+        </div>
+      </div>
+    </div>
+    <!-- Javascript -->
+    <script type="text/Javascript" src="assets/script.js"></script>
+  </body>
+</html>

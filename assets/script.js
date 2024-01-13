@@ -27,7 +27,7 @@ const badCardsContent = [
   {
     id: 0,
     title: "🤷‍♂️ Not all narv-men (?)🤦‍♂️",
-    body: "Scopri che nonostante l'anno sia iniziato da poco si contano già troppi narvicidi. Decidi di dedicarti un attimo all'estinzione della sotto-specie Narval Alfa Cishet.",
+    body: "Scopri che nonostante l'anno sia iniziato da poco si contano già troppi narvicidi. Decidi di dedicarti un attimo all'estinzione della sotto-specie Narwhal Alpha Cishet.",
   },
   {
     id: 1,
@@ -238,8 +238,8 @@ function startGame() {
 
       // Chiamo endGame con isVictory impostato su false se tutte le bad cards sono state cliccate
       if (allBadCardsClicked.length === totDeadNarvals && score > 0) {
-        endGame(true, "Hai completato il tuo percorso nonostante le avversità");
-        console.log("game over");
+        endGame(true, "You found your way home despite adversities!");
+        console.log("game end");
       }
 
       if (score <= 0) {

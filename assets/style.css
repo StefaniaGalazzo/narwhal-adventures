@@ -183,6 +183,7 @@ button:hover {
   display: grid;
   place-content: center;
   z-index: 5;
+  overflow: auto;
 }
 .close {
   cursor: pointer;
@@ -204,7 +205,7 @@ button:hover {
 }
 .card,
 .bonus-card {
-  position: fixed;
+  position: absolute;
   width: 60vw;
   top: 15%;
   left: 20%;
@@ -297,14 +298,21 @@ hr {
   }
   .card,
   .bonus-card {
-    position: fixed;
+    position: absolute;
     width: 80vw;
     top: 5%;
     left: 10%;
   }
-  .col3 img {
+  .col3 img,
+  .col1 img {
     width: 55%;
-    align-self: center;
     margin: 0 auto;
+  }
+  .card-title,
+  .fear {
+    font-size: 18px;
+  }
+  .bodytext {
+    font-size: 16px;
   }
 }

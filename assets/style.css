@@ -242,6 +242,8 @@ button:hover {
 .col1 img {
   width: 80%;
   align-self: center;
+  display: grid;
+  animation: upDown 3s ease-in-out infinite;
 }
 hr {
   border: 1px solid blue;

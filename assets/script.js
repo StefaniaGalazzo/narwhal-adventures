@@ -212,7 +212,7 @@ function startGame() {
       //   SE è un deadNarval
       if (deadNarvList.includes(i)) {
         // decrese score
-        score -= 5;
+        score -= 10;
         // show dead narv cell
         cell.classList.add("dead-narv", "cell-clicked");
         // cell.classList.add("dead-narv");
@@ -223,7 +223,7 @@ function startGame() {
         cell.classList.add("happy-narv", "cell-clicked");
         // cell.classList.add("happy-narv"); // DA CREARE
         bonusCard.classList.remove("hide");
-        score += 15;
+        score += 5;
       } else {
         cell.classList.add("cell-clicked");
         score += 5;

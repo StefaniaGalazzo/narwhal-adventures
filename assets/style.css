@@ -169,10 +169,12 @@ button:hover {
   display: block;
   visibility: hidden;
 }
+
 /* POPUPS & CARDS*/
 /* #dead-card-container {
   display: none;
 } */
+
 .overlay {
   position: fixed;
   top: 0;

@@ -298,6 +298,8 @@ hr {
   }
   .card,
   .bonus-card {
+    display: flex;
+    flex-direction: column-reverse;
     position: absolute;
     width: 80vw;
     top: 5%;

@@ -287,9 +287,7 @@ hr {
   .game-container {
     width: 304px;
   }
-  .game-board {
-    overflow: visible;
-  }
+
   .grid {
     height: 300px;
     width: 300px;
@@ -311,10 +309,18 @@ hr {
     margin: 0 auto;
   }
   .card-title,
-  .fear {
+  .fear,
+  .end-game-text {
     font-size: 18px;
   }
   .bodytext {
     font-size: 16px;
+  }
+
+  .win::after {
+    content: url(../assets/images/happy-narval.svg);
+    top: -41%;
+    left: -47%;
+    width: 400px;
   }
 }
